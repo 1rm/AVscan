@@ -2,16 +2,6 @@ import re
 from argparse import ArgumentParser
 from av_data import av1, av2
 
-
-# def av_scan(x, i, avList):
-#     if x in map(str.lower, av1.avList1.keys()):
-#         i += 1
-#         try:
-#             print("\033[1;31m[+]\033[1;37m", x, "->", "\033[1;31m" + avList[x] + "\033[1;37m")
-#         except KeyError:
-#             print("\033[1;33m[!]\033[1;37m 进程名字和av指纹名字大小写不一致:" + "\033[1;33m", x, "\033[1;37m")
-
-
 def av(tasklist):
     i = 0
     with open(tasklist, "r", encoding="utf-8") as e:
